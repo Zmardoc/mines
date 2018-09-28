@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GameService, GameState } from './services/game.service';
 import { Square } from './classes/square';
 import { MatDialog } from '@angular/material';
-import { DialogEnd } from './components/dialog-end';
+import { DialogEnd } from './components/dialog/dialog-end';
 
 
 @Component({

@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatInputModule, MatDialog, MatDialogActions, MatDialogClose, MatDialogModule, MatDialogTitle} from '@angular/material';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { DialogEnd } from './components/dialog-end';
+import { DialogEnd } from './components/dialog/dialog-end';
 @NgModule({
   declarations: [
     AppComponent, DialogEnd

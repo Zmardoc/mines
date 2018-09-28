@@ -1,6 +1,9 @@
 .playground{
 
 }
+h2{
+    color:white;
+}
 .square{
     width:25px;
     height:25px;
@@ -18,13 +21,13 @@
     width:200px;
     margin:20px auto;
     padding: 10px;
-    background-color: lightyellow;
+    background-color: #22ff00b2;
     border-radius: 3px;
 }
 .mat-button{
-    background-color: #22ff00b2;
+    /*background-color: white;*/
     opacity: 1;
-    color:aliceblue;
+    color:white;
 }
 .newGame{
     margin:10px auto;
