@@ -1,0 +1,29 @@
+<div class="playground" *ngIf="gameStarted">
+  <span>Detekováno: {{gameService.flagPlaced}}/{{mines}}</span>
+  <table>
+    <tr *ngFor="let xxx of battlefield; let x=index" >
+      <td *ngFor="let square of battlefield[x]; let y=index">
+        <!--  <button (click)="showSquare(battlefield[x][y]);">{{battlefield[x][y].innerText}}</button> -->
+        <div class="square" [ngClass]="{'revealed': battlefield[x][y].revealed && !battlefield[x][y].mine, 'mineStep':battlefield[x][y].revealed && battlefield[x][y].finalMine}" (click)="showSquare(battlefield[x][y]);" (contextmenu)="setFlag(battlefield[x][y]);"> 
+          {{battlefield[x][y].innerText}}
+          <i class="fas fa-flag" *ngIf="battlefield[x][y].flag && !battlefield[x][y].revealed"></i>
+          <i class='fas fa-bomb' *ngIf="battlefield[x][y].revealed && battlefield[x][y].mine"></i>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <button mat-button (click)="newGame();" class="newGame">Nová hra</button>
+</div>
+<div class="menu" *ngIf="!gameStarted">
+  <h2>Miny</h2>
+  <mat-form-field>
+    <input type="number" matInput placeholder="Řádků" name="rows" min="1" [(ngModel)]="rows">
+  </mat-form-field>
+  <mat-form-field >
+    <input type="number" matInput placeholder="Sloupců" name="cols" min="1" [(ngModel)]="cols">
+  </mat-form-field>
+  <mat-form-field >
+    <input type="number" matInput placeholder="Min" name="mines" min="1" [(ngModel)]="mines">
+  </mat-form-field>
+  <button mat-button (click)="startGame();" >Start</button>
+</div>

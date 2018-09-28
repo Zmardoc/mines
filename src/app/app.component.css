@@ -1,0 +1,56 @@
+.playground{
+
+}
+.square{
+    width:25px;
+    height:25px;
+    background-color: #22ff00b2;
+    border:none;
+    border-radius: 3px;
+    margin:1px;
+    text-align: center;
+    line-height: 25px;
+    cursor: default;    
+    font-size: 22px;
+    color: #3a3a3a;
+}
+.menu{
+    width:200px;
+    margin:20px auto;
+    padding: 10px;
+    background-color: lightyellow;
+    border-radius: 3px;
+}
+.mat-button{
+    background-color: #22ff00b2;
+    opacity: 1;
+    color:aliceblue;
+}
+.newGame{
+    margin:10px auto;
+}
+/*
+.mat-input-element{
+    color: #22ff00b2;
+}*/
+.square:hover{
+    opacity:0.8;
+}
+.revealed{
+    background-color: #e7a63d;
+}
+.mineStep{
+    background-color: red;
+}
+table{
+    margin: 0px;
+    padding: 0px;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+table tr td{
+    padding:0px;
+}
+span{
+    color: white; 
+}

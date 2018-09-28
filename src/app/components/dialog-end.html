@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>{{data.dialogText}}</h1>
+<div mat-dialog-content></div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Zavřít</button>
+  <button mat-button [mat-dialog-close]="data.dialogText" cdkFocusInitial>Nová hra</button>
+  <button mat-button [mat-dialog-close]="data.dialogText" cdkFocusInitial>Nová hra s novým rozložením</button>
+</div>
